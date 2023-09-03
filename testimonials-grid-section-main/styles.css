@@ -33,11 +33,16 @@ body {
   background-color: hsl(var(--color-blue));
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
+  width: 80%;
   display: grid;
-  grid-template-columns: 90%;
   justify-content: center;
   gap: 2em;
   padding: 80px 0;
@@ -128,4 +133,29 @@ body {
 .test-3 .test-sub-text,
 .test-5 .test-sub-text {
   color: hsl(var(--color-test2), 0.7);
+}
+
+@media (min-width: 1440px) {
+  .container {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-areas:
+      "test1 test1 test2 test5"
+      "test3 test4 test4 test5";
+  }
+
+  .test-1 {
+    grid-area: test1;
+  }
+  .test-2 {
+    grid-area: test2;
+  }
+  .test-3 {
+    grid-area: test3;
+  }
+  .test-4 {
+    grid-area: test4;
+  }
+  .test-5 {
+    grid-area: test5;
+  }
 }
