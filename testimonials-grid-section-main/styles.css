@@ -1,0 +1,131 @@
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* 1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
+
+:root {
+  --color-white: 0, 0%, 100%;
+  --color-test1: 263, 55%, 52%;
+  --color-test2: 217, 19%, 35%;
+  --color-test4: 219, 29%, 14%;
+  --color-gray: 0, 0%, 81%;
+  --color-blue: 210, 46%, 95%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(var(--color-blue));
+  font-size: 13px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 90%;
+  justify-content: center;
+  gap: 2em;
+  padding: 80px 0;
+}
+
+.testimonial {
+  padding: 25px 30px;
+  border-radius: 10px;
+  color: hsl(var(--color-gray));
+}
+
+.test-1 {
+  background-color: hsl(var(--color-test1));
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 10%;
+}
+
+.test-2 {
+  background-color: hsl(var(--color-test2));
+}
+
+.test-3 {
+  background-color: hsl(var(--color-white));
+  color: hsl(var(--color-test2));
+}
+
+.test-4 {
+  background-color: hsl(var(--color-test4));
+}
+
+.test-5 {
+  background-color: hsl(var(--color-white));
+  color: hsl(var(--color-test2));
+}
+
+.user {
+  width: 250px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "picture name name"
+    "picture verified verified";
+}
+
+.pf-picture {
+  width: 40px;
+  border: 2px solid rgb(192, 192, 192);
+  border-radius: 50%;
+  grid-area: picture;
+  align-self: center;
+}
+
+.user-name,
+.user-verified {
+  padding: 0;
+  margin: 0;
+  margin-left: -25px;
+}
+
+.user-name {
+  grid-area: name;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.user-verified {
+  grid-area: verified;
+  color: hsl(var(--color-gray), 0.5);
+}
+
+.test-3 .user-verified,
+.test-5 .user-verified {
+  color: hsl(var(--color-test2), 0.5);
+}
+
+.test-header-text {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+.test-sub-text {
+  color: hsla(var(--color-gray), 0.7);
+  font-size: 1.1em;
+}
+
+.test-3 .test-sub-text,
+.test-5 .test-sub-text {
+  color: hsl(var(--color-test2), 0.7);
+}
