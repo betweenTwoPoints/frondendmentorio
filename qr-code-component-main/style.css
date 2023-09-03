@@ -1,0 +1,65 @@
+:root {
+  --card-bg: hsl(0, 0%, 100%);
+  --main-bg: hsl(212, 45%, 89%);
+  --title-color: hsl(218, 44%, 22%);
+  --info-text: hsl(220, 15%, 55%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Use when not defining height in hmtl, body */
+  /* height: 100vh; */
+}
+
+.card {
+  width: 300px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+}
+
+.qr-code {
+  width: 100%;
+  border-radius: 10px;
+}
+
+h1 {
+  color: var(--title-color);
+  font-size: 1.4em;
+  padding: 0 5px;
+}
+
+p {
+  color: var(--info-text);
+  font-size: 1em;
+  padding: 0 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
