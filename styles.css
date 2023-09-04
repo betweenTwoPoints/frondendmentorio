@@ -1,6 +1,6 @@
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 html,
@@ -16,25 +16,38 @@ body {
 }
 
 body {
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.textshit {
+  text-align: center;
+}
+
+.bg-gen {
+  text-align: center;
+}
+
+.trash {
+  margin: 3rem 0;
 }
 
 section {
-    height: 2000px;
-    background-color: #f4f4f4;
-    border: 2px solid black;
+  height: 2000px;
+  background-color: #f4f4f4;
+  border: 2px solid black;
 }
 
 li {
-    margin: 2rem;
+  margin: 2rem;
 }
 
 @media (min-width: 675px) {
-    section {
-        height: 50vh;
-    }
+  section {
+    height: 50vh;
+  }
 }
