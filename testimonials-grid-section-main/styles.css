@@ -35,13 +35,14 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
   width: 80%;
+  max-width: 1200px;
   display: grid;
   justify-content: center;
   gap: 2em;
@@ -136,6 +137,7 @@ body {
 }
 
 @media (min-width: 1440px) {
+
   .container {
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     grid-template-areas:
