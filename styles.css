@@ -1,10 +1,40 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+html,
 body {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+}
+
+section {
+    height: 2000px;
+    background-color: #f4f4f4;
+    border: 2px solid black;
 }
 
 li {
-    margin: 5px;
+    margin: 2rem;
+}
+
+@media (min-width: 675px) {
+    section {
+        height: 50vh;
+    }
 }
