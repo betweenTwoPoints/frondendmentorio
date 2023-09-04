@@ -1,7 +1,13 @@
-# frondendmentorio
+# Front end mentor io projects
 
-_I didn't even notice I misspelled front end._
+These are projects found on frontendmentor.io
 
-## These are projects found on frontendmentor.io
+## To do
 
-Now there is more text
+* Make file structure cleaner
+* More projects!
+
+### Things I should look at 
+
+* Product review card - responsive css -> body flex-direction
+* Testimonials - mobile only shows lower section of document
